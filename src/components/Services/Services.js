@@ -12,7 +12,7 @@ import axios from 'axios';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        const uri = `https://frozen-wildwood-00967.herokuapp.com/services`
+        const uri = `https://mighty-wildwood-74825.herokuapp.com/services`
         axios.get(uri)
             .then(res => {
                 console.log(res.data)

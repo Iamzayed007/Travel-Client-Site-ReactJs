@@ -16,7 +16,7 @@ const history = useHistory()
     } = useForm();
     const onSubmit = data => {
         
-        fetch('https://frozen-wildwood-00967.herokuapp.com/services', {
+        fetch('https://mighty-wildwood-74825.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

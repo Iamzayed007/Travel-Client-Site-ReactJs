@@ -16,7 +16,7 @@ const ManageAllTour = () => {
 
     useEffect(() => {
        
-        fetch('https://frozen-wildwood-00967.herokuapp.com/orders')
+        fetch('https://mighty-wildwood-74825.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => {
                
@@ -42,7 +42,7 @@ const ManageAllTour = () => {
                 status: orderStatus
             }
 
-            fetch(`https://frozen-wildwood-00967.herokuapp.com/orders/${id}`, {
+            fetch(`https://mighty-wildwood-74825.herokuapp.com/orders/${id}`, {
                 method: 'PATCH',
                 headers: { 'content-Type': 'application/json' },
                 body: JSON.stringify(orderData)
@@ -66,7 +66,7 @@ const ManageAllTour = () => {
 
         const proceed = window.confirm('are you sure, you want to delete?');
         if(proceed){
-            const url = `https://frozen-wildwood-00967.herokuapp.com/orders/${id}`
+            const url = `https://mighty-wildwood-74825.herokuapp.com/orders/${id}`
             fetch (url,{
                 method:'DELETE',
                

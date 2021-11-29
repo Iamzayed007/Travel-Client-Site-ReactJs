@@ -15,7 +15,7 @@ const PlaceHolder = () => {
     // const [status, set]
     useEffect(() => {
         // addToDb(aId)
-        const url = `https://frozen-wildwood-00967.herokuapp.com/services/${id}`
+        const url = `https://mighty-wildwood-74825.herokuapp.com/services/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -40,7 +40,7 @@ const PlaceHolder = () => {
         data.booking = service;
         // data.s_id= serviceDet_id
 
-        fetch('https://frozen-wildwood-00967.herokuapp.com/orders', {
+        fetch('https://mighty-wildwood-74825.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
